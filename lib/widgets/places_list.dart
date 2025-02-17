@@ -9,8 +9,13 @@ class PlacesList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (places.isEmpty) {
-      return const Center(
-        child: Text('No places added yet'),
+      return Center(
+        child: Text(
+          'No places added yet',
+          style: TextStyle(
+            color: Theme.of(context).colorScheme.onSurface,
+          ),
+        ),
       );
     }
 
